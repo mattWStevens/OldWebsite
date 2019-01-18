@@ -35,7 +35,7 @@ function updateSize() {
         $("#tree").css({fontSize: 18});
     }
     
-    if (width >= 800 && width < 100) {
+    if (width >= 800 && width < 1000) {
         $(".pRowOne").css({marginLeft: 90});
     }
 }
