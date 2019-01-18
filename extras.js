@@ -34,4 +34,8 @@ function updateSize() {
         $(".card-text").html("");
         $("#tree").css({fontSize: 18});
     }
+    
+    if (width > 1000) {
+        $(".pRowOne").css({marginLeft: 0});
+    }
 }
