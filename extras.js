@@ -37,6 +37,6 @@ function updateSize() {
     }
     
     if (width == 1024) {
-        $(".pRowOne").css({marginLeft: 55});
+        $(".pRowOne").css({marginLeft: 75});
     }
 }
