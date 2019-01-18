@@ -30,7 +30,7 @@ function updateSize() {
         $("embed").replaceWith("<a href='Stevens.pdf' id='resLink'>Click Here For My Resume</a>");
     }
     
-    if (width >= 800 && width < 1200) {
+    if (width >= 800 && width < 1200 && width != 1024) {
         $(".card-text").html("");
         $("#tree").css({fontSize: 18});
         $(".pRowOne").css({marginLeft: 25});
