@@ -282,7 +282,7 @@ embed { margin-left: auto;
 }
 
 /* Phones */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .divisor { display: none;
     }
     
