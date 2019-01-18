@@ -33,6 +33,6 @@ function updateSize() {
     if (width >= 800 && width < 1200) {
         $(".card-text").html("");
         $("#tree").css({fontSize: 18});
-        $(".pRowOne").css({marginLeft: 0});
+        $(".pRowOne").css({marginLeft: 50});
     }
 }
