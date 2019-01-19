@@ -36,7 +36,9 @@ function updateSize() {
         $(".pRowOne").css({marginLeft: 25});
     }
     
-    if (width == 1024) {
+    if (width > 1000 && width < 1200) {
+        $(".card-text").html("");
+        $("#tree").css({fontSize: 18});
         $(".pRowOne").css({marginLeft: 55});
     }
 }
