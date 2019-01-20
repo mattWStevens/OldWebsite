@@ -20,6 +20,14 @@ $(document).ready(function(){
     $(window).resize(updateSize);   // update screen based on browser size automatically
 });
 
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
 /*
     Handles updating certain key features based on viewport size.
 */
@@ -40,5 +48,10 @@ function updateSize() {
         $(".card-text").html("");
         $("#tree").css({fontSize: 18});
         $(".pRowOne").css({marginLeft: 70});
+    }
+
+    if (width < 600) {
+        $(".navbar-toggler").attr("onClick", "openNav()");
+        $(".navbar-toggler").removeAttr("data-toggle");
     }
 }

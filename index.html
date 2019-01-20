@@ -50,6 +50,18 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Mobile Nav Overlay -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="overlay-content">
+                    <a href="#aboutMe" onclick="closeNav()">About Me</a>
+                    <a href="#projects" onclick="closeNav()">Projects</a>
+                    <a href="#experience" onclick="closeNav()">Experience</a>
+                    <a href="#contactMe" onclick="closeNav()">Contact Me</a>
+                </div>
+            </div>
             
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
