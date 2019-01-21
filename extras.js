@@ -4,6 +4,9 @@
     January 14th, 2019
 */
 
+/*
+    Handles the positioning of the toggle arrow button.
+*/
 $(document).ready(function(){
     $("#showMore").click(function(){
         if ($("#more").hasClass("fas fa-angle-down")){
@@ -20,10 +23,16 @@ $(document).ready(function(){
     $(window).resize(updateSize);   // update screen based on browser size automatically
 });
 
+/*
+    Opens the full screen overlay navigation menu for mobile devices.
+*/
 function openNav() {
     document.getElementById("mobileNav").style.width = "100%";
 }
 
+/*
+    Closes the full screen overlay navigation menu for mobile devices.
+*/
 function closeNav() {
     document.getElementById("mobileNav").style.width = "0%";
 }
