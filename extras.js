@@ -7,9 +7,9 @@
 /*
     Handles the positioning of the toggle arrow button.
 */
-$(document).ready(function(){
-    $("#showMore").click(function(){
-        if ($("#more").hasClass("fas fa-angle-down")){
+$(document).ready(function() {
+    $("#showMore").click(function() {
+        if ($("#more").hasClass("fas fa-angle-down")) {
             $("#more").removeClass("fas fa-angle-down");
             $("#more").toggleClass("fas fa-angle-up");
         } else {
