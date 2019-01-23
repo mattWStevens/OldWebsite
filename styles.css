@@ -38,6 +38,9 @@ h4 { color: #AEE5D8;
 .main { color: #EDF2F4;
 }
 
+.card { background-color: #6969B3;
+}
+
 .card-body { background-color: #6969B3;
 }
 
@@ -130,6 +133,9 @@ embed { margin-left: auto;
 .under:hover:before { visibility: visible;
                       -webkit-transform: scaleX(1);
                       transform: scaleX(1);
+}
+
+.graphics { width: 100%;
 }
 
 @-webkit-keyframes swing {
