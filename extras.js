@@ -66,5 +66,6 @@ function updateSize() {
         $("#w").html("Weather Graphic From <br><a href='http://www.icons-land.com/'>http://www.icons-land.com/</a>");
         $("#c").html("Calculator Graphic From <br><a href='http://iconleak.com'>http://iconleak.com</a>");
         $("#footer").css({padding: 35});
+        $(".banner").css({fontSize: 72});
     }
 }
