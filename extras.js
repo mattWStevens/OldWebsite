@@ -58,6 +58,7 @@ function updateSize() {
         $(".card-text").html("");
         $("#tree").css({fontSize: 18});
         $(".pRowOne").css({marginLeft: 70});
+        $(".graphics").css({padding: 5});
     }
 
     if (width < 600) {
