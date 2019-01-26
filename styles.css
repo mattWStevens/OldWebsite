@@ -5,8 +5,9 @@
 */
 
 .jumbotron { margin-bottom: 0;
-             background-image: url("banner.png");
-             border: 15px groove #6969B3;
+             background-image: url("banner9.jpg");
+             background-size: contain;
+             border: 8px dashed #6969B3;
 }
 
 .sectionHeader { margin-top: 20px;
@@ -23,7 +24,8 @@ h1 { color: #AEE5D8;
      font-family: "Geostar Fill", cursive;
 }
 
-.banner { color: #2B2D42;
+.banner { color: #6969B3;
+          text-shadow: 5px 5px 5px #AEE5D8;
           font-family: "Fontdiner Swanky", cursive;
           font-size: 86px;
 }
@@ -106,7 +108,6 @@ a.email:hover { color: turquoise;
             width: 15%;
             text-align: center;
 }
-
 
 #more { font-size: 35px;
         color: #AEE5D8;
