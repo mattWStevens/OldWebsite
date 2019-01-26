@@ -5,7 +5,9 @@
 */
 
 .jumbotron { margin-bottom: 0;
-             background-image: url("banner.png");
+             background-image: url("banner9.jpg");
+             background-size: contain;
+             border: 8px dashed #6969B3;
 }
 
 .sectionHeader { margin-top: 20px;
@@ -22,9 +24,22 @@ h1 { color: #AEE5D8;
      font-family: "Geostar Fill", cursive;
 }
 
-.banner { color: #2B2D42;
+.banner { color: #6969B3;
+          text-shadow: 5px 5px 5px #AEE5D8;
           font-family: "Fontdiner Swanky", cursive;
           font-size: 86px;
+}
+
+#footer { background-color: #2B2D42;
+          padding: 10px;
+}
+
+#footer ul { list-style-type: none;
+             margin-bottom: 0;
+}
+
+#footer ul li { color: #EDF2F4;
+                font-size: 12px;
 }
 
 .skills { font-size: 84px;
@@ -36,6 +51,9 @@ h4 { color: #AEE5D8;
 }
 
 .main { color: #EDF2F4;
+}
+
+.card { background-color: #6969B3;
 }
 
 .card-body { background-color: #6969B3;
@@ -91,7 +109,6 @@ a.email:hover { color: turquoise;
             text-align: center;
 }
 
-
 #more { font-size: 35px;
         color: #AEE5D8;
 }
@@ -130,6 +147,10 @@ embed { margin-left: auto;
 .under:hover:before { visibility: visible;
                       -webkit-transform: scaleX(1);
                       transform: scaleX(1);
+}
+
+.graphics { width: 100%;
+            padding: 25px;
 }
 
 @-webkit-keyframes swing {
