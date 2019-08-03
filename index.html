@@ -4,369 +4,463 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Matthew Stevens</title>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Matthew Stevens</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        
-        <!-- CSS -->
-        <link href="styles.css" rel="stylesheet" type="text/css">
-        
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Geostar+Fill" rel="stylesheet">
-        
-        <!-- Extra jQuery -->
-        <script src="extras.js"></script>
-    </head>
-    
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        <!--Jumbotron Header Area-->
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="banner">Matthew Stevens</h1>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Geostar+Fill" rel="stylesheet">
+
+    <!-- Extra jQuery -->
+    <script src="extras.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--Jumbotron Header Area-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="banner">Matthew Stevens</h1>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <!-- Brand Space (leaving empty)-->
+        <a class="navbar-brand" href="#"></a>
+
+        <!-- Toggler/Collapsible Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Mobile Nav Overlay -->
+        <div id="mobileNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="overlay-content">
+                <a href="#aboutMe" onclick="closeNav()">About Me</a>
+                <a href="#projects" onclick="closeNav()">Projects</a>
+                <a href="#experience" onclick="closeNav()">Experience</a>
+                <a href="#contactMe" onclick="closeNav()">Contact Me</a>
             </div>
         </div>
-        
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-            <!-- Brand Space (leaving empty)-->
-            <a class="navbar-brand" href="#"></a>
-            
-            <!-- Toggler/Collapsible Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <!-- Mobile Nav Overlay -->
-            <div id="mobileNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link under" href="#aboutMe">About Me</a>
+                </li>
 
-                <div class="overlay-content">
-                    <a href="#aboutMe" onclick="closeNav()">About Me</a>
-                    <a href="#projects" onclick="closeNav()">Projects</a>
-                    <a href="#experience" onclick="closeNav()">Experience</a>
-                    <a href="#contactMe" onclick="closeNav()">Contact Me</a>
-                </div>
-            </div>
-            
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link under" href="#aboutMe">About Me</a>
-                    </li>
-                    
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle under" href="#projectsExperience" id="navbardrop" data-toggle="dropdown">Projects/Experience</a>
-                        
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#projects">Projects</a>
-                            
-                            <a class="dropdown-item" href="#experience">Experience</a>
-                        </div>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link under" href="#contactMe">Contact Me</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        
-        <!-- Main Content -->
-        <div class="container-fluid">
-            <!-- About Me -->
-            <h1 class="sectionHeader">
-                <span class="fas fa-code symbol"></span>About Me<span class="fas fa-code symbol"></span>
-            </h1>
-            <hr class="divisor">
-            
-            <div id="aboutMe">
-                <div class="row">
-                    <!-- Image -->
-                    <div class="col-sm-4">
-                        <img src="StevensPhoto.jpg" class="img-thumbnail" alt="My Picture">
-                    </div>
-                    
-                    <!-- Education/Info -->
-                    <div class="col-sm-8" id="infoSection">
-                        <p class="main">My name is Matthew Stevens. I am currently a senior at the University of Hartford working towards
-                           a Bachelor's of Science in Computer Science with a Minor in Mathematics. I love programming and enjoy
-                           spending my free time learning new technologies, frameworks, and languages! I have recently been working on
-                           an Android ARM assembly language emulator as a side project in order to expand my knowledge of mobile development.
-                           I am currently looking to obtain a position as a software engineer that will enable me to utilize my critical-thinking skills and programming knowledge to further deepen my understanding of computer science.
-                        </p>
-                        
-                        <p class="main"><span class="underline"><strong>Education:</strong></span><br><br>
-                            <span class="underline">Relevant Courses:</span> Java Programming (2 semesters), Data Structures, Introduction to Internet Programming, Calculus 1, Calculus 2, Physics 1, Physics 2, Formal Languages &amp; Automata, Architecture &amp; Assembly Language, Discrete Mathematics 1,
-                            Introduction to Artificial Intelligence, Concepts of Programming Languages, Linear Algebra &amp; Matrix Theory, Software Development <br><br>
-                            <em>B.S. in Computer Science, Minor in Mathematics - University of Hartford</em><br>
-                            <em>Expected Graduation: December 2019</em>
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Skills -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 style="text-align: center">Skills</h4>
-                        
-                        <p>
-                            <span class="fab fa-java skills swing"></span>
-                            <span class="fab fa-js-square skills swing"></span>
-                            <span class="fab fa-python skills swing"></span>
-                            <span class="fab fa-html5 skills swing"></span>
-                            <span class="fab fa-css3-alt skills swing"></span>
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Awards -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 style="text-align: center">Awards</h4>
-                        
-                        <ul>
-                            <li class="main">Dean's List Fall 2017 Semester</li>
-                            <li class="main">Dean's List Spring 2018 Semester</li>
-                            <li class="main">Dean's List Fall 2018 Semester</li>
-                            <li class="main">President's Honors List Fall 2017 Semester</li>
-                            <li class="main">President's Honors List Spring 2018 Semester</li>
-                            <li class="main">President's Honors List Fall 2018 Semester</li>
-                            <li class="main">Alpha Chi Honor Society, National Society of Leadership &amp; Success - Sigma Alpha Pi</li>
-                            <li class="main">Department of Computer Science Sophomore Achievement Award in Recognition of Academic Excellence 2017-2018                        School Year
-                            </li>
-                            <li class="main">Department of Computer Science Junior Achievement Award in Recognition of Academic Excellence 2018-2019                        School Year
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- My Resume -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 style="text-align: center" id="resTitle">My Resume</h4>
-                        
-                        <embed src="Stevens.pdf" width="600" height="800" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Projects/Experience -->
-            <h1 class="sectionHeader projectsExperience">
-                <span class="fas fa-code symbol projectsExperience"></span>
-                    Projects/Experience
-                <span class="fas fa-code symbol projectsExperience"></span>
-            </h1>
-            <hr class="divisor">
-            
-            <!-- Projects -->
-            <div id="projects">
-                <h4 style="text-align: center; padding-bottom: 15px; padding-top: 15px">My Projects</h4>
-                
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="card swing pRowOne">
-                            <!-- Weather Graphic -->
-                            <img src="weather.png" alt="weather graphic" class="graphics">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle under" href="#projectsExperience" id="navbardrop"
+                        data-toggle="dropdown">Projects/Experience</a>
 
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    Weather Report
-                                </h4>
-                                
-                                <p class="card-text">
-                                    This is a program that utilizes the OpenWeatherMap API to collect information about the day's forecast.                    It then analyzes the weather conditions and generates a report which is emailed to the user with a                        description of the weather for the day and suggested activities based on the current weather conditions.                 It will be run once every morning.
-                                </p>
-                                
-                                <a href="https://github.com/mattWStevens/WeatherReport" class="btn btn-primary">Visit Repository</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4">
-                        <div class="card swing pRowOne">
-                            <!-- Android Graphic -->
-                            <img src="Android.png" alt="android graphic" class="graphics">
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#projects">Projects</a>
 
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    ARM Assembly Language Emulator
-                                </h4>
-                                
-                                <p class="card-text">
-                                    This is an Android application that emulates a code editor for ARM Assembly Language. It enables users
-                                    select the line of the text editor that they desire and then they are prompted for what type of operation
-                                    they would perform. The user is then able to select operation type and paramters, such as constants and register
-                                    numbers. The editor is then updated with the corresponding operation code. Upon executing the play button, the
-                                    user is able to visually see how the binary numbers being stored in the computer's memory or register banks are
-                                    altered.
-                                </p>
-                                
-                                <a href="https://github.com/keith-E/LearnArmAssembly" class="btn btn-primary">Visit Repository</a>
-                            </div>
-                        </div>
+                        <a class="dropdown-item" href="#experience">Experience</a>
                     </div>
-                    
-                    <div class="col-sm-4">
-                        <div class="card swing pRowOne">
-                            <!-- Hangman Graphic -->
-                            <img src="Hangman.png" alt="hangman graphic" class="graphics">
+                </li>
 
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    Hangman Web Browser Game
-                                </h4>
-                                
-                                <p class="card-text">
-                                    This is a web browser game variation of the classic game of hangman. It comes with a slight twist, however. The
-                                    user is only notified of the correct letters that they guess, not the location of the correct letters. The user is then able to make a guess on what the word is based on the correct letters that they have guessed.
-                                </p>
-                                
-                                <a href="https://github.com/mattWStevens/Hangman" class="btn btn-primary">Visit Repository</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Hidden Projects -->
-            <div id="hidden" class="collapse row">
+                <li class="nav-item">
+                    <a class="nav-link under" href="#contactMe">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <!-- About Me -->
+        <h1 class="sectionHeader">
+            <span class="fas fa-code symbol"></span>About Me<span class="fas fa-code symbol"></span>
+        </h1>
+        <hr class="divisor">
+
+        <div id="aboutMe">
+            <div class="row">
+                <!-- Image -->
                 <div class="col-sm-4">
-                        <div class="card swing pRowOne">
-                            <!-- Tic Tac Toe Graphic -->
-                            <img src="TicTacToe.png" alt="tic tac toe graphic" class="graphics">
-
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    Tic Tac Toe
-                                </h4>
-                                
-                                <p class="card-text">
-                                    This is a web browser game that simulates the classic game of tic tac toe. It utilizes web storage to keep
-                                    track of how many wins each player has.
-                                </p>
-                                
-                                <a href="https://github.com/mattWStevens/TicTacToe" class="btn btn-primary">Visit Repository</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4">
-                        <div class="card swing pRowOne">
-                            <!-- Calculator Graphic -->
-                            <img src="Calculator.png" alt="calculator graphic" class="graphics">
-
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    Calculator
-                                </h4>
-                                
-                                <p class="card-text">
-                                    Simple scientific calculator implementation with memory function that enables you to access previous answers via an answer key in new equations. Implemented in Java.
-                                </p>
-                                
-                                <a href="https://github.com/mattWStevens/SimpleCalculator" class="btn btn-primary">Visit Repository</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4">
-                        <div class="card swing pRowOne">
-                            <!-- Tree Graphic -->
-                            <img src="Tree.png" alt="tree graphic" class="graphics">
-                            
-                            <div class="card-body">
-                                <h4 class="card-title" id="tree">
-                                    Binary Search Tree Implementation
-                                </h4>
-                                
-                                <p class="card-text">
-                                    Java implementation of a Binary Search Tree.
-                                </p>
-                                
-                                <a href="https://github.com/mattWStevens/BinarySearchTree" class="btn btn-primary">Visit Repository</a>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="StevensPhoto.jpg" class="img-thumbnail" alt="My Picture">
                 </div>
-            </div>
-        
-            <div class="hiddenButton">
-                <a href="#hidden" data-toggle="collapse" id="showMore"><span class="fas fa-angle-down" id="more"></span></a>
-            </div>
-            
-            <!-- Experience -->
-            <div id="experience">
-                <div class="col-sm-12">
-                    <h4 style="text-align: center">Experience</h4>
-                    
-                    <p class="main"><span style="text-decoration: underline"><strong>F3 Technology Partners:</strong> May 2018 - September 2018</span></p>
-                    
-                    <p class="main">Developed numerous operating system configurations and performance data extractions,
-                       formatting, and graphing utilities using Python, Bash, AWK, vim syntax editor, batch Libre Office,
-                       and gnuplot for Linux, AIX, Solaris and other environments.
+
+                <!-- Education/Info -->
+                <div class="col-sm-8" id="infoSection">
+                    <p class="main">My name is Matthew Stevens. I am currently a senior at the University of Hartford
+                        working towards
+                        a Bachelor's of Science in Computer Science with a Minor in Mathematics. I love programming and
+                        enjoy
+                        spending my free time learning new technologies, frameworks, and languages! I have recently been
+                        working on
+                        an Android ARM assembly language emulator as a side project in order to expand my knowledge of
+                        mobile development.
+                        I am currently looking to obtain a position as a software engineer that will enable me to
+                        utilize my critical-thinking skills and programming knowledge to further deepen my understanding
+                        of computer science.
                     </p>
-                    
-                    <p class="main">A sample of some of the scripts I wrote for F3 Technology Partners can be found on my 
-                       <a href="https://github.com/mattWStevens/F3_WORK" style="color: turquoise">Github</a> account.
+
+                    <p class="main"><span class="underline"><strong>Education:</strong></span><br><br>
+                        <span class="underline">Relevant Courses:</span> Java Programming (2 semesters), Data
+                        Structures, Introduction to Internet Programming, Calculus 1, Calculus 2, Physics 1, Physics 2,
+                        Formal Languages &amp; Automata, Architecture &amp; Assembly Language, Discrete Mathematics 1,
+                        Introduction to Artificial Intelligence, Concepts of Programming Languages, Linear Algebra &amp;
+                        Matrix Theory, Software Development <br><br>
+                        <em>B.S. in Computer Science, Minor in Mathematics - University of Hartford</em><br>
+                        <em>Expected Graduation: December 2019</em>
                     </p>
                 </div>
             </div>
-            
-            <!-- Contact Me -->
-            <h1 class="sectionHeader">
-                <span class="fas fa-code symbol"></span>Contact Me<span class="fas fa-code symbol"></span>
-            </h1>
-            <hr class="divisor">
-            
-            <div id="contactMe"><p style="text-align: center">
-                <p style="text-align: center">
-                    <a href="mailto:mwstevens0708@gmail.com" class="email"><span class="fas fa-envelope"></span>  mwstevens0708@gmail.com</a>
-                </p>
 
-                <p style="text-align: center">
-                    <a href="tel:8604169151" class="email"><span class="fas fa-phone"></span>  (860) 416-9151</a>
-                </p>
+            <!-- Skills -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 style="text-align: center">Skills</h4>
 
-                <p style="text-align: center">
-                    <a href="https://github.com/mattWStevens" class="email"><span class="fab fa-github"></span>  Github</a>
-                </p>
-                
-                <p style="text-align: center">
-                    <a href="https://www.linkedin.com/in/matthew-stevens-17b27716a/" class="email"><span class="fab fa-linkedin"></span>  LinkedIn</a>
-                </p>
+                    <p>
+                        <span class="fab fa-java skills swing"></span>
+                        <span class="fab fa-js-square skills swing"></span>
+                        <span class="fab fa-python skills swing"></span>
+                        <span class="fab fa-html5 skills swing"></span>
+                        <span class="fab fa-css3-alt skills swing"></span>
+                    </p>
+                </div>
             </div>
 
-            <!-- Footer -->
-            <div id="footer">
+            <!-- Awards -->
+            <div class="row">
                 <div class="col-sm-12">
+                    <h4 style="text-align: center">Awards</h4>
+
                     <ul>
-                        <li id="w">Weather Graphic From <a href="http://www.icons-land.com/">http://www.icons-land.com/</a></li>
-                        <li id="a">Android Graphic From <a href="https://www.iconfinder.com/justui">https://www.iconfinder.com/justui</a></li>
-                        <li id="h">Hangman Graphic From <a href="https://www.iconfinder.com/quizanswers">https://www.iconfinder.com/quizanswers</a></li>
-                        <li>Tic Tac Toe Graphic Designed by Alpár-Etele Méder, <br>available under the Creative Commons (Attribution 3.0 Unported) License
-                            <br><a href="https://creativecommons.org/licenses/by/3.0/">https://creativecommons.org/licenses/by/3.0/</a>
+                        <li class="main">Dean's List Fall 2017 Semester</li>
+                        <li class="main">Dean's List Spring 2018 Semester</li>
+                        <li class="main">Dean's List Fall 2018 Semester</li>
+                        <li class="main">Dean's List Spring 2019 Semester</li>
+                        <li class="main">President's Honors List Fall 2017 Semester</li>
+                        <li class="main">President's Honors List Spring 2018 Semester</li>
+                        <li class="main">President's Honors List Fall 2018 Semester</li>
+                        <li class="main">President's Honors List Spring 2019 Semester</li>
+                        <li class="main">Alpha Chi Honor Society, National Society of Leadership &amp; Success - Sigma
+                            Alpha Pi</li>
+                        <li class="main">Department of Computer Science Sophomore Achievement Award in Recognition of
+                            Academic Excellence 2017-2018 School Year
                         </li>
-                        <li id="c">Calculator Graphic From <a href="http://iconleak.com">http://iconleak.com</a></li>
-                        <li id="tr">Tree Graphic From <a href="https://www.iconfinder.com/ibrandify">https://www.iconfinder.com/ibrandify</a></li>
+                        <li class="main">Department of Computer Science Junior Achievement Award in Recognition of
+                            Academic Excellence 2018-2019 School Year
+                        </li>
                     </ul>
                 </div>
             </div>
-    </body>
+
+            <!-- My Resume -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 style="text-align: center" id="resTitle">My Resume</h4>
+
+                    <embed src="Stevens.pdf" width="600" height="800" alt="pdf"
+                        pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects/Experience -->
+        <h1 class="sectionHeader projectsExperience">
+            <span class="fas fa-code symbol projectsExperience"></span>
+            Projects/Experience
+            <span class="fas fa-code symbol projectsExperience"></span>
+        </h1>
+        <hr class="divisor">
+
+        <!-- Projects -->
+        <div id="projects">
+            <h4 style="text-align: center; padding-bottom: 15px; padding-top: 15px">My Projects</h4>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card swing pRowOne">
+                        <!-- Weather Graphic -->
+                        <img src="weather.png" alt="weather graphic" class="graphics">
+
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Weather Report
+                            </h4>
+
+                            <p class="card-text">
+                                This is a program that utilizes the OpenWeatherMap API to collect information about the
+                                day's forecast. It then analyzes the weather conditions and generates a report which is
+                                emailed to the user with a description of the weather for the day and suggested
+                                activities based on the current weather conditions. It will be run once every morning.
+                            </p>
+
+                            <a href="https://github.com/mattWStevens/WeatherReport" class="btn btn-primary">Visit
+                                Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card swing pRowOne">
+                        <!-- Android Graphic -->
+                        <img src="Android.png" alt="android graphic" class="graphics">
+
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                ARM Assembly Language Emulator
+                            </h4>
+
+                            <p class="card-text">
+                                This is an Android application that emulates a code editor for ARM Assembly Language. It
+                                enables users
+                                select the line of the text editor that they desire and then they are prompted for what
+                                type of operation
+                                they would perform. The user is then able to select operation type and paramters, such
+                                as constants and register
+                                numbers. The editor is then updated with the corresponding operation code. Upon
+                                executing the play button, the
+                                user is able to visually see how the binary numbers being stored in the computer's
+                                memory or register banks are
+                                altered.
+                            </p>
+
+                            <a href="https://github.com/keith-E/LearnArmAssembly" class="btn btn-primary">Visit
+                                Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card swing pRowOne">
+                        <!-- Hangman Graphic -->
+                        <img src="Hangman.png" alt="hangman graphic" class="graphics">
+
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Hangman Web Browser Game
+                            </h4>
+
+                            <p class="card-text">
+                                This is a web browser game variation of the classic game of hangman. It comes with a
+                                slight twist, however. The
+                                user is only notified of the correct letters that they guess, not the location of the
+                                correct letters. The user is then able to make a guess on what the word is based on the
+                                correct letters that they have guessed.
+                            </p>
+
+                            <a href="https://github.com/mattWStevens/Hangman" class="btn btn-primary">Visit
+                                Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden Projects -->
+        <div id="hidden" class="collapse row">
+            <div class="col-sm-4">
+                <div class="card swing pRowOne">
+                    <!-- Tic Tac Toe Graphic -->
+                    <img src="TicTacToe.png" alt="tic tac toe graphic" class="graphics">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Tic Tac Toe
+                        </h4>
+
+                        <p class="card-text">
+                            This is a web browser game that simulates the classic game of tic tac toe. It utilizes web
+                            storage to keep
+                            track of how many wins each player has.
+                        </p>
+
+                        <a href="https://github.com/mattWStevens/TicTacToe" class="btn btn-primary">Visit Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card swing pRowOne">
+                    <!-- Calculator Graphic -->
+                    <img src="Calculator.png" alt="calculator graphic" class="graphics">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Calculator
+                        </h4>
+
+                        <p class="card-text">
+                            Simple scientific calculator implementation with memory function that enables you to access
+                            previous answers via an answer key in new equations. Implemented in Java.
+                        </p>
+
+                        <a href="https://github.com/mattWStevens/SimpleCalculator" class="btn btn-primary">Visit
+                            Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card swing pRowOne">
+                    <!-- Tree Graphic -->
+                    <img src="Tree.png" alt="tree graphic" class="graphics">
+
+                    <div class="card-body">
+                        <h4 class="card-title" id="tree">
+                            Binary Search Tree Implementation
+                        </h4>
+
+                        <p class="card-text">
+                            Java implementation of a Binary Search Tree.
+                        </p>
+
+                        <a href="https://github.com/mattWStevens/BinarySearchTree" class="btn btn-primary">Visit
+                            Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hiddenButton">
+        <a href="#hidden" data-toggle="collapse" id="showMore"><span class="fas fa-angle-down" id="more"></span></a>
+    </div>
+
+    <!-- Experience -->
+    <div id="experience">
+        <div class="col-sm-12">
+            <h4 style="text-align: center">Experience</h4>
+
+            <p class="main"><span style="text-decoration: underline"><strong>iDevices | Hubbell:</strong> May 2019 -
+                    August 2019</span></p>
+
+            <p class="main">Developed and added new features in a Scaled Agile Framework environment for iDevice’s smart
+                home products
+                Connected app as well as the Amazon Alexa Instinct Switch app available on the Google Play Store and the
+                Apple App Store.
+            </p>
+
+            <ul class="main">
+                <li>
+                    Made the new Amazon Alexa Instinct Switch app accessible for the visually impaired via integrating
+                    Android TalkBack services as well as custom features
+                </li>
+
+                <li>
+                    Rewrote the error handling classes to be more efficient and robust as well as created an error
+                    management class to control the different kinds of errors and dynamically alert the user in an 
+                    easily understandable and friendly manner
+                </li>
+
+                <li>
+                    Rewrote the permissions and enablement management class to appropriately handle obtaining
+                    permissions from the users without overlapping permissions on all Android operating systems 
+                    versions 5.1 and up
+                </li>
+
+                <li>
+                    Optimized both the Connected and Switch apps for Android operating systems Lollipop, Marshmallow,
+                    Nougat, Oreo, and Pie on a multitude of different-sized devices
+                </li>
+
+                <li>
+                    Fixed bugs reported by management as well as users leading to a reduction in app crashes as well as
+                    a better user experience
+                </li>
+
+                <li>
+                    Implemented fade-in animations to the dashboard tutorial screens of the Amazon Alexa Instinct Switch
+                    App
+                </li>
+            </ul>
+
+            <br>
+
+            <p class="main"><span style="text-decoration: underline"><strong>F3 Technology Partners:</strong> May 2018 -
+                    September 2018</span></p>
+
+            <p class="main">Developed numerous operating system configurations and performance data extractions,
+                formatting, and graphing utilities using Python, Bash, AWK, vim syntax editor, batch Libre Office,
+                and gnuplot for Linux, AIX, Solaris and other environments.
+            </p>
+
+            <p class="main">A sample of some of the scripts I wrote for F3 Technology Partners can be found on my
+                <a href="https://github.com/mattWStevens/F3_WORK" style="color: turquoise">Github</a> account.
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <h1 class="sectionHeader">
+        <span class="fas fa-code symbol"></span>Contact Me<span class="fas fa-code symbol"></span>
+    </h1>
+    <hr class="divisor">
+
+    <div id="contactMe">
+        <p style="text-align: center">
+            <p style="text-align: center">
+                <a href="mailto:mwstevens0708@gmail.com" class="email">
+                    <span class="fas fa-envelope"></span>
+                    mwstevens0708@gmail.com
+                </a>
+            </p>
+
+            <p style="text-align: center">
+                <a href="tel:8604169151" class="email"><span class="fas fa-phone"></span> (860) 416-9151</a>
+            </p>
+
+            <p style="text-align: center">
+                <a href="https://github.com/mattWStevens" class="email"><span class="fab fa-github"></span> Github</a>
+            </p>
+
+            <p style="text-align: center">
+                <a href="https://www.linkedin.com/in/matthew-stevens-17b27716a/" class="email">
+                    <span class="fab fa-linkedin"></span> LinkedIn</a>
+            </p>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="col-sm-12">
+            <ul>
+                <li id="w">Weather Graphic From <a href="http://www.icons-land.com/">http://www.icons-land.com/</a></li>
+                <li id="a">Android Graphic From 
+                    <a href="https://www.iconfinder.com/justui">https://www.iconfinder.com/justui</a></li>
+                <li id="h">Hangman Graphic From 
+                    <a href="https://www.iconfinder.com/quizanswers">https://www.iconfinder.com/quizanswers</a>
+                </li>
+                <li>Tic Tac Toe Graphic Designed by Alpár-Etele Méder, <br>available under the Creative Commons
+                    (Attribution 3.0 Unported) License
+                    <br>
+                    <a href="https://creativecommons.org/licenses/by/3.0/">https://creativecommons.org/licenses/by/3.0/</a>
+                </li>
+                <li id="c">Calculator Graphic From <a href="http://iconleak.com">http://iconleak.com</a></li>
+                <li id="tr">Tree Graphic From 
+                    <a href="https://www.iconfinder.com/ibrandify">https://www.iconfinder.com/ibrandify</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
 </html>
