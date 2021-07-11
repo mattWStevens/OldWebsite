@@ -44,7 +44,7 @@ function updateSize() {
     var width = $(window).width();
     
     if (width < 1200) {
-        $("embed").replaceWith("<a href='Stevens.pdf' id='resLink'>Click Here For My Resume</a>");
+        $("embed").replaceWith("<a href='Stevens_Resume_update.pdf' id='resLink'>Click Here For My Resume</a>");
         $("#resTitle").css({marginBottom: 15});
     }
     
